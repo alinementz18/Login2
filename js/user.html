@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para a folha de estilos CSS -->
+</head>
+<body>
+    <h1>Gerenciamento de Usuários</h1> <!-- Título do projeto -->
+    <h2>Adicionar Usuário</h2> <!-- Subtítulo -->
+
+    <input type="email" id="email" placeholder="Email"> <!-- Campo de entrada para o email do usuário -->
+    <input type="password" id="senha" placeholder="Senha"> <!-- Campo de entrada para a senha do usuário -->
+
+    <button onclick="adicionarUsuario()">Adicionar</button> <!-- Botão para adicionar o usuário, que chama uma função que adiciona o usuário -->
+    <button onclick="deletarUsuarios()">Deletar</button> <!-- Botão para deletar todos os usuários -->
+    <button onclick="alterarUsuarios()">Alterar</button> <!-- Botão para deletar todos os usuários -->
+
+
+    <h2>Lista de Usuários</h2>
+    <button onclick="obterUsuarios()">Atualizar Lista</button> <!-- Botão para atualizar a lista de usuários, que chama uma função que atualiza a lista -->
+    <ul id="usuarios"></ul> <!-- Lista para exibir os usuários -->
+    
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html> 
